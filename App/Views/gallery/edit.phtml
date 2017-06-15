@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h2>Atualizar Foto</h2>
+        <div class="fh5co-spacer fh5co-spacer-sm"></div>
+
+        <form enctype="multipart/form-data" action="/edit/update" method="post">
+            <input type="hidden" name="id_photo" value="<?= $this->view->photo['id'] ?>">
+            <input type="hidden" name="file_old_photo" value="<?= $this->view->photo['name'] ?>">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Título</label>
+                        <input type="text" name="title_photo" value="<?= $this->view->photo['title'] ?>" class="form-control" placeholder="Informe uma breve descrição" required>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label>Foto Antiga</label>
+                        <img src="images/<?= $this->view->photo['name'] ?>" alt="<?= $this->view->photo['title'] ?>" width="150" height="150">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label>Nova Foto</label>
+                        <input type="file" name="file_photo" class="form-control" accept="image/png, image/jpeg" required>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="submit" name="submit_photo" class="btn btn-primary" value="Enviar Foto">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

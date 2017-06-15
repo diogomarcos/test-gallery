@@ -1,0 +1,25 @@
+<div class="row">
+    <div id="fh5co-board" data-columns>
+        <?php if (!empty($this->view->photos) && isset($this->view->photos)): ?>
+            <?php foreach ($this->view->photos as $photo):?>
+                <div class="item">
+                    <div class="animate-box">
+                        <a href="images/<?= $photo['name'] ?>" class="image-popup fh5co-board-img" title="<?= $photo['title'] ?>">
+                            <img src="images/<?= $photo['name'] ?>" alt="<?= $photo['title'] ?>">
+                        </a>
+                    </div>
+                    <div class="fh5co-desc"><?= $photo['title'] ?></div>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="item">
+                <div class="animate-box">
+                    <a href="images/img_1.jpg" class="image-popup fh5co-board-img" title="Ainda não foram adicionadas fotos na Galeria">
+                        <img src="images/img_1.jpg" alt="Ainda não foram adicionadas fotos na Galeria">
+                    </a>
+                </div>
+                <div class="fh5co-desc">Ainda não foram adicionadas fotos na Galeria</div>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
