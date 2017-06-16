@@ -29,6 +29,9 @@ Para o desenvolmento da aplicação foram utilizadas os seguintes recursos:
 3. Através do 'prompt command' ou 'git bash' execute o seguinte comando `php -S localhost:8181`
 4. Em seu navegador de preferência acesso o endereço `http://localhost:8181` para ter acesso a aplicação
 
+### Informações complementares
+Para auxiliar no processo de desenvolvimento e ter uma maior abstração, além de ter uma organização no código, foi criado um "micro-framework" dentro do diretório `vendor/Micro`. Nele contém informações / implamentações genericas para o controller, manipulação do banco de dados, injeção de dependência dentre outros.
+
 ### Resultado do Desenvolvimento
 + Página Inícial:
 ![alt tag](https://raw.githubusercontent.com/diogomarcos/test-gallery/master/public/screens/01-Home.PNG)
