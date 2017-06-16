@@ -23,7 +23,7 @@ Para o desenvolmento da aplicação foram utilizadas os seguintes recursos:
 + PHP 7
 
 ### Execução da Aplicação
-1. Através do 'prompt command' ou 'git bash', realize o glone do projeto pelo comando \
+1. Através do 'prompt command' ou 'git bash', realize o clone do projeto pelo comando \
 `git clone git@github.com:diogomarcos/test-gallery.git test-gallery`
 2. Através do 'prompt command' ou 'git bash' navegue até o seguinte diretório `test-gallery\public`
 3. Através do 'prompt command' ou 'git bash' execute o seguinte comando `php -S localhost:8181`
